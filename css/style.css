@@ -202,7 +202,25 @@ body {
     color: #513D00;
     background-color: #FFE699;
     border-color:#FFE699;
+    letter-spacing: 1px;
+    -webkit-transition: all .2s;
+    transition: all .2s;
   }
+
+  .btn-promis:hover {
+    color: #513D00;
+    border-color: #513D00;
+    border-width: 2px;
+  }
+  .btn-promis {
+    color: #513D00;
+    background-color: #FFE699;
+    border-color:#FFE699;
+    letter-spacing: 1px;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+  }
+
 button:focus {
     outline: none;
 }
@@ -275,10 +293,11 @@ p, .karla {
     font-family: 'Poppins', sans-serif;
 }
 ul.list-inline > li {
-    display: inline-block;
+    display: list-item;
 }
 ul.list-inline > li:not(:last-child) {
     margin-right: 15px;
+    margin-bottom: 15px;
 }
 .form-control {
     font-size: 14px;
@@ -329,6 +348,9 @@ select.parsley-error {
 }
 .pb-120 {
     padding-bottom: 120px;
+}
+.pt-60 {
+    padding-top: 60px;
 }
 .pt-100 {
     padding-top: 100px;
@@ -546,7 +568,6 @@ select.parsley-error {
     position: relative;
 }
 .header-absoulate {
-    position: absolute;
     left: 0;
     top: 0;
     width:100%;
@@ -1259,6 +1280,16 @@ canvas#c {
     position: relative;
     overflow: hidden;
 }
+.buy-plan {
+    background: #ffe699a6;
+    box-shadow: 0 0 5px rgba(0,0,0,0.05);
+    -webkit-transition: all .2s;
+    transition: all .2s;
+    padding-top: 25px;
+    position: relative;
+    overflow: hidden;
+}
+
 .single-pricing-plan:hover {
     background: #7c5d0089;
     box-shadow: 0 0 20px rgba(0,0,0,0.10);
@@ -2004,6 +2035,76 @@ swiper-wrapper{
     }
 }
 
+
+.review-slider--4 {
+    margin-left: 15px;
+    margin-right: 15px;   
+}
+.review-slider--4 .single-review {
+    padding: 0;
+    box-shadow: none;
+    background-color: transparent !important;
+}
+.review-slider--4 .single-review .review-text {
+    background-color: #7C5D00 !important;
+    color: #513D00;
+    border-radius: 10px;
+    padding: 100px;
+    overflow: hidden;
+    background-image: url(../img/home-3/search-pattern.png);
+}
+.review-slider--4 .single-review .review-text p {
+    max-width: 910px;
+    margin: 0 auto;
+    color: #513D00;
+    font-size: 20px;
+    line-height: 34px;
+    font-style: italic;
+    margin: 40px 0;
+}
+.review-slider--4 .single-review .review-text i {
+    font-size: 80px;
+}
+.review-slider--4 .single-review .review-text {
+    padding-top: 100px;
+    margin-bottom: 40px;
+}
+.review-slider--4 .single-review .review-info {
+    margin-top: 25px;
+    color: #513D00;
+}
+.review-slider--4 .single-review .review-info h3 {
+    color: #513D00;
+    margin-top: 20px;
+}
+/* Review Slider Home 3 Light */
+.review-slider--4.light .single-review .review-text p {
+    color: #513D00;
+}
+.review-slider--4.light .single-review .review-text {
+    background-color: #7c5d004b !important;
+    box-shadow: 0 6px 38px rgba(0,0,0,.1);
+    margin: 15px;
+}
+.review-slider--4.light .single-review .review-text i {
+    color: #7C5D00;
+}
+.review-slider--4 .single-review .review-info  img {
+    border: 3px solid #513D00;
+    border-radius: 10%;
+    max-width: 50%;
+}
+.review-slider--4.light .single-review .review-info  img {
+    border-color:#7C5D00;
+}
+.review-slider--4.light .single-review .review-info h3 {
+    color: #513D00;
+}
+.review-slider--4.light .single-review .review-info span {
+    color: #513D00;
+}
+
+
 /* Review--3 Dark */
 .review-slider--3.dark .single-review .single-review-inner  {
     background-color: #166be4;
@@ -2109,7 +2210,6 @@ a.disabled:hover {
 }
 .post-content > a:hover {
     letter-spacing: 1px;
-    color: #FFE699;
 }
 .post-content > a i {
     position: relative;
@@ -3093,8 +3193,8 @@ a.disabled:hover {
 ==============================================*/
 
 .happy-counter li {
-    float: left;
     width: 20%;
+    display:table-cell
 }
 .happy-counter li span {
     display: block;
@@ -3106,6 +3206,7 @@ a.disabled:hover {
     color: #513D00;
     text-transform: uppercase;
     letter-spacing: 3px;
+    margin: 0 10% 20% 0;
 }
 
 /*=============================================
@@ -3189,6 +3290,7 @@ a.disabled:hover {
     font-weight: 500;
     padding: 15px 10px;
     vertical-align: middle;
+    color:#513D00;
 }
 .domain-table td {
     padding: 18px 10px;
@@ -3199,7 +3301,6 @@ a.disabled:hover {
 }
 .domain-table tbody span {
     font-weight: bold;
-    color: #FFE699;
 }
 .domain-table tbody a {
     font-family: 'Poppins', sans-serif;
