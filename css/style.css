@@ -211,8 +211,10 @@ body {
     color: #513D00;
     border-color: #513D00;
     border-width: 2px;
+    background-color: #e7ca73;
   }
   .btn-promis {
+    width: 80%;
     color: #513D00;
     background-color: #FFE699;
     border-color:#FFE699;
