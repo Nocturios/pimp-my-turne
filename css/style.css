@@ -55,7 +55,23 @@ We may release future updates so it will overwrite this file. it's better and sa
 18: Others
 
 ----------------------------------------------*/
-
+@font-face {
+    font-family: pimp;
+    src: url(../font/dolphins.ttf);
+  }
+  @font-face {
+    font-family: 'Karla', sans-serif;
+    src: url(../font/dolphins.ttf);
+  }
+  @font-face {
+    font-family: 'Font Awesome\ 5 Free';
+    src: url(../font/dolphins.ttf);
+  }
+  /*==========
+pimp -> 'Poppins', sans-serif
+pimp2 -> 'Karla', sans-serif
+pimp3 -> 'Font Awesome\ 5 Free'
+  *======/
 /*=============================================
     01: General CSS
 ==============================================*/
@@ -68,6 +84,7 @@ input::-webkit-inner-spin-button {
 }
 input[type="number"] {
     -moz-appearance: textfield;
+    appearance: textfield;
 }
 input:focus {
     outline: none;
@@ -131,7 +148,7 @@ h6 {
 }
 body {
     width: 100%;
-    font-family: 'Poppins', sans-serif;
+    font-family: pimp;
     font-size: 14px;
     color: #513D00;
     background: #513D00;
@@ -290,7 +307,7 @@ p, .karla {
     font-family: 'Karla', sans-serif;
 }
 .poppins {
-    font-family: 'Poppins', sans-serif;
+    font-family: pimp;
 }
 ul.list-inline > li {
     display: list-item;
@@ -688,7 +705,7 @@ li a:hover .circle {
   position: relative;
   z-index: 1;
   border-radius: 100%;
-  animation: illuminate 4s ease-out infinite;
+  animation: illuminate 2s ease-out infinite;
   background: #665b337c;
 }
 .circle{
@@ -728,18 +745,18 @@ li a:hover i {
 
 
 @keyframes illuminate {
-  0% {
-    transform: scale(.6, .6);
-    opacity: 0.3;
-  }
-  50% {
-    opacity: 0.8;
-    transform: scale(1);
-  }
-  100%{
-    transform: scale(.6, .6);
-    opacity: 0.3;
-  }
+    0% {
+        -moz-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0.4);
+        box-shadow: 0 0 0 0 rgba(204, 169, 44, 0.4);
+      }
+      70% {
+        -moz-box-shadow: 0 0 0 30px rgba(204, 169, 44, 0);
+        box-shadow: 0 0 0 30px rgba(204, 169, 44, 0);
+      }
+      100% {
+        -moz-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
+        box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
+      }
 }
 
 /* 14 */
@@ -2139,7 +2156,7 @@ swiper-wrapper{
 
 .review-slider--3 .single-review .review-info span {
     font-size: 18px;
-    font-family: 'Poppins', sans-serif;
+    font-family: pimp;
     color: #7f8080;
 }
 .review-slider--3 .single-review .review-content p {
@@ -2470,7 +2487,7 @@ a.disabled:hover {
     font-style: italic;
 }
 .single-post.post-style--2 .post-content .post-info a {
-    font-family: 'Poppins', sans-serif;
+    font-family: pimp;
     font-style: normal;
 }
 .single-post.post-style--2 .post-content p + p {
@@ -3178,7 +3195,7 @@ a.disabled:hover {
 }
 .subscribe-form.form-style--3 p {
     font-size: 16px;
-    font-family: 'Poppins', sans-serif;
+    font-family: pimp;
 }
 .subscribe-form.form-style--3 form input {
     background-color: #513D00;
@@ -3255,7 +3272,7 @@ a.disabled:hover {
 }
 .footer-contacts.footer-contacts--3 ul li a, 
 .footer-contacts.footer-contacts--3 ul li address {
-    font-family: 'Poppins', sans-serif;
+    font-family: pimp;
 }
 .footer-contacts ul li span i {
     color: #513D00;
@@ -3514,7 +3531,7 @@ a.disabled:hover {
     font-weight: bold;
 }
 .domain-table tbody a {
-    font-family: 'Poppins', sans-serif;
+    font-family: pimp;
     font-size: 14px;
     -webkit-transition: all .2s;
     transition: all .2s;
@@ -3705,7 +3722,7 @@ a.disabled:hover {
 }
 .contact-content ul li {
     color: #513D00;
-    font-family: 'Poppins', sans-serif;
+    font-family: pimp;
 }
 .contact-content ul li span {
     color: #a8aff5;
@@ -3724,7 +3741,7 @@ a.disabled:hover {
 .contact-info li span {
     position: absolute;
     left: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: pimp;
     color: #FBC72A;
 }
 .contact-info li a {

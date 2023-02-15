@@ -1,6 +1,10 @@
 /*==================================================================================
     Custom Stylesheet (Any custom styling you want to apply should be defined here).
 ====================================================================================*/
+@font-face {
+  font-family: pimp;
+  src: url(../font/dolphins.ttf);
+}
 
 .discord_white {
     height: 18px;
@@ -759,7 +763,7 @@ Color:
 
       body {
         width: 100%;
-        font-family: 'Poppins', sans-serif;
+        font-family: pimp;
         font-size: 14px;
         color: #513D00;
         background: #513D00;
@@ -788,7 +792,7 @@ Color:
       @media (max-width: 912px){
         body {
           width: 100%;
-          font-family: 'Poppins', sans-serif;
+          font-family: pimp;
           font-size: 14px;
           color: #513D00;
           background: #513D00;
@@ -802,7 +806,7 @@ Color:
     @media (max-width: 440px){
       body {
         width: 100%;
-        font-family: 'Poppins', sans-serif;
+        font-family: pimp;
         font-size: 14px;
         color: #513D00;
         background: #513D00;
@@ -828,16 +832,37 @@ Color:
   position: relative;
   left: 0%;
 }}
-@media (min-width: 750px){
+@media (min-width: 0px){
   .btn-gr{
     border:none;
-    width: 15%;
+    width: 30%;
+  }
+}
+
+@media (min-width: 575px){
+  .btn-gr{
+    border:none;
+    width: 21%;
+  }
+}
+
+@media (min-width: 768px){
+  .btn-gr{
+    border:none;
+    width: 20%;
   }
 }
 @media (min-width: 990px){
   .btn-gr{
     border:none;
-    width: 10%;
+    width: 15%;
+  }
+}
+
+@media (min-width: 1200px){
+  .btn-gr{
+    border:none;
+    width: 13%;
   }
 }
 
@@ -1027,7 +1052,7 @@ Color:
 .header-menu2 ul ul li.active a:before,
 .header-menu2 ul ul li:hover > a:before {
     content: '\f111';
-    font-family: 'Font Awesome\ 5 Free';
+    font-family: 'Font Awesome\ 5 Free';;
     position: absolute;
     left: 10px;
     font-size: 6px;
