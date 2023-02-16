@@ -3,7 +3,18 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script>
+const filePath = 'main.txt';
 
+fetch(filePath)
+  .then(response => response.text())
+  .then(data => {
+    let number = parseInt(data);
+    number++;
+
+    fetch(filePath, { method: 'PUT', body: number.toString() });
+  });
+</script>
     <!-- Document Title -->
     <title>Pimp my Turne</title>
 
