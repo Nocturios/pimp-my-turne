@@ -93,16 +93,30 @@
 
     <!-- About us -->
 
-    <section class="pricing-plans pb-120" id="raisons">
+    <section class="pricing-plans" id="raisons">
         <div class="container">
                 <!-- Single pricing plan -->
-                    <div class="buy-plan text-center animated fadeInUp" data-animate="fadeInUp" data-delay=".1" style="animation-duration: 0.6s; animation-delay: 0.1s; padding: 5% 5% 0; border-radius:10%">
-                        <div class="row align-items-center">
-                            <p data-animate="fadeInUp" data-delay=".4" style="font-size: 120%;">Dans le mail que vous allez rédiger, joignez directement votre fichier 3D, ajoutez éventuellement une description de votre besoin.<br>(utilisez de préférence des fichiers .stl ou .par)<br><br>Un devis vous sera renvoyé après analyse de la demande</p>
+                    <div class="buy-plan text-center" data-animate="fadeInUp" data-delay=".1">
+                        <ul class="karla list-inline" style="font-size:18px;">
+                            <li>- Joignez directement votre fichier 3D (stl ou par uniquement)</li>
+                            <li>- Précisez vos coordonnées pour la livraison (turne avec batiment et email)</li>
+                            <li>- Ajoutez éventuellement une description de votre besoin</li>
+                            <li>- Au besoin, informez votre choix de couleur parmi celles disponibles (noir ou orange), si aucune n'est précisée, nous choisirons en fonction des stocks</li>
+                    </ul>
+                    <h2 data-animate="fadeInUp" data-delay=".4" style="font-size:25px;">Un devis vous sera renvoyé après analyse de la demande</h2>
                     </div>
-                <div class="purchase text-center" style="padding:30px 0 30px">
+                    <form name="form" class="text-center pt-60" action="mailto:pimpmyturne@gmail.com">
+                        <p>
+                          <input type="checkbox" id="terms" required>
+                          <label for="terms">Je jure sur mon semestre que j'ai lu la procédure d'impression 3D</label>
+                        </p>
+                        <div>
+                          <button class="custom-btn btn-14" type="proceed">Après avoir coché la case, cliquez pour envoyer le mail</button>
+                        </div>
+                      </form>
+             <!--   <div class="purchase text-center" style="padding:30px 0 30px">
                     <a href="mailto:pimpmyturne@gmail.com" class="btn btn-promis">Envoyer le mail</a>
-                </div>
+                </div>-->
 
                     </div>
                 <!-- End of Single pricing plan -->
